@@ -1,0 +1,195 @@
+@font-face {
+  font-family: "BebasNeue";
+  src: url(/Page-1/Fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: "PlusJakartaSans";
+  src: url(/Page-1/Fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "SixCaps";
+  src: url(/Page-1/Fonts/SixCaps-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
+main .left {
+  width: 50%;
+  height: 100vh;
+  background-image: url(/Page-1/Images/1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 100px 100px 80px rgba(0, 0, 0, 0.8);
+}
+main .left .left-text {
+  margin: 60px;
+}
+main .left .left-text h1 {
+  margin-bottom: 25px;
+}
+main .left .left-text h1 a {
+  color: #f8f2e8;
+  font-size: 3.5rem;
+  text-decoration: none;
+  font-family: "BebasNeue";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+main .left .left-text ul li {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+main .left .left-text ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #f0c633;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+  transform: scale(1);
+}
+main .left .left-text ul li a {
+  text-decoration: none;
+  color: #f8f2e8;
+  font-size: 1.1rem;
+  font-family: "PlusJakartaSans";
+  font-weight: bold;
+  transition: color 0.5s;
+  transition: color 0.4s ease, margin-left 0.4s ease;
+}
+main .left .left-text ul li:hover::before {
+  transform: scale(1.5);
+}
+main .left .left-text ul li:hover a {
+  color: #f0c633;
+  margin-left: 10px;
+}
+main .right {
+  width: 50%;
+  height: 100vh;
+  background-image: url(/Page-1/Images/background.png);
+  padding: 0px 50px 0px 50px;
+}
+main .right header {
+  font-family: "SixCaps";
+  font-size: 5.5rem;
+  line-height: 1;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+main .right header h1 {
+  color: #f0c633;
+}
+main .right header h1 span {
+  color: white;
+}
+main .right section p {
+  color: rgb(95, 95, 95);
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "PlusJakartaSans";
+  margin-bottom: 10px;
+}
+main .right section button {
+  background-color: #f0c633;
+  padding: 20px 50px 20px 50px;
+  margin-top: 40px;
+  border: none;
+  border-radius: 2rem;
+}
+main .right section button:hover {
+  background-color: white;
+  transition: 0.9s;
+}
+main .right section button a {
+  text-decoration: none;
+  font-family: "PlusJakartaSans";
+  text-transform: uppercase;
+  color: #0f2430;
+  font-size: 1.2rem;
+}
+main .right footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 220px;
+}
+main .right footer .footer-left h4 {
+  color: #f0c633;
+}
+main .right footer .footer-left h2 {
+  color: white;
+}
+main .right footer .footer-right {
+  text-align: right;
+}
+main .right footer .footer-right h4 {
+  color: #f0c633;
+}
+main .right footer .footer-right h2 a {
+  color: white;
+  text-decoration: none;
+}
+main .right footer .footer-right h2 a:hover {
+  text-decoration: underline;
+}
+@media (max-width: 992px) {
+  main {
+    flex-direction: column;
+  }
+  main .left {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    top: auto;
+  }
+  main .left .left-text {
+    margin: 30px;
+  }
+  main .left .left-text h1 a {
+    font-size: 2.5rem;
+  }
+  main .right {
+    width: 93.5%;
+    height: auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  main .right header {
+    font-size: 3.5rem;
+    letter-spacing: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  main .right section p {
+    font-size: 1.1rem;
+  }
+  main .right section button {
+    width: 80%;
+    padding: 15px;
+  }
+  main .right footer {
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 20px;
+  }
+  main .right footer .footer-right {
+    text-align: center;
+  }
+}/*# sourceMappingURL=style.css.map */

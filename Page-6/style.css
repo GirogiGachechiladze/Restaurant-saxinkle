@@ -1,0 +1,165 @@
+@font-face {
+  font-family: "BebasNeue";
+  src: url(/Page-4/Fonts/BebasNeue-Regular.ttf);
+}
+@font-face {
+  font-family: "PlusJakartaSans";
+  src: url(/Page-4/Fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "SixCaps";
+  src: url(/Page-4/Fonts/SixCaps-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+       user-select: none;
+}
+main .left {
+  width: 50%;
+  height: 100vh;
+  background-image: url(Images/6.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 100px 100px 80px rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+}
+main .left .left-text {
+  margin: 60px;
+}
+main .left .left-text h1 {
+  margin-bottom: 25px;
+}
+main .left .left-text h1 a {
+  color: #f8f2e8;
+  font-size: 3.5rem;
+  text-decoration: none;
+  font-family: "BebasNeue";
+  text-transform: uppercase;
+  font-weight: bold;
+}
+main .left .left-text ul li {
+  position: relative;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+}
+main .left .left-text ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  background-color: #f0c633;
+  border-radius: 50%;
+  transition: transform 0.5s ease;
+  transform: scale(1);
+}
+main .left .left-text ul li a {
+  text-decoration: none;
+  color: #f8f2e8;
+  font-size: 1.1rem;
+  font-family: "PlusJakartaSans";
+  font-weight: bold;
+  transition: color 0.5s;
+  transition: color 0.4s ease, margin-left 0.4s ease;
+}
+main .left .left-text ul li:hover::before {
+  transform: scale(1.5);
+}
+main .left .left-text ul li:hover a {
+  color: #f0c633;
+  margin-left: 10px;
+}
+main .right {
+  background-color: #102326;
+  width: 50%;
+  height: 352vh;
+  padding: 40px;
+}
+main .right header {
+  display: flex;
+  padding-bottom: 10px;
+  border-bottom: #364647 solid 1px;
+}
+main .right header .h-left {
+  margin-right: 150px;
+}
+main .right header .h-left p {
+  font-family: "SixCaps";
+  color: #f0c633;
+  font-size: 12rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin-top: -45px;
+}
+main .right header .h-center {
+  background-color: #364647;
+  height: 180px;
+  width: 1px;
+}
+main .right header .h-right {
+  color: white;
+  margin-left: 50px;
+  font-size: 1.2rem;
+  line-height: 30px;
+}
+main .right header .h-right span {
+  color: gray;
+}
+main .right section {
+  padding-top: 50px;
+  border-top: #364647 solid 1px;
+  margin-top: 3px;
+}
+main .right section .sec-1 .head-1 .inner-head, main .right section .sec-2 .head-1 .inner-head {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+main .right section .sec-1 .head-1 .inner-head ul, main .right section .sec-2 .head-1 .inner-head ul {
+  color: #f0c633;
+}
+main .right section .sec-1 .head-1 .inner-head h1, main .right section .sec-2 .head-1 .inner-head h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-left: -10px;
+  font-family: "PlusJakartaSans";
+}
+main .right section .sec-1 .inner-1 p, main .right section .sec-1 .inner-2 p, main .right section .sec-2 .inner-1 p, main .right section .sec-2 .inner-2 p {
+  color: gray;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+}
+main .right section .sec-1 .inner-1 img, main .right section .sec-1 .inner-2 img, main .right section .sec-2 .inner-1 img, main .right section .sec-2 .inner-2 img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 50px;
+}
+main .right footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+main .right footer .f-left {
+  color: gray;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+main .right footer .f-right {
+  color: gray;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}/*# sourceMappingURL=style.css.map */

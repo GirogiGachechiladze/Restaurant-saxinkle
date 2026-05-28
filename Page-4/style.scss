@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'BebasNeue';
+    src: url(/Page-4/Fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'PlusJakartaSans';
+    src: url(/Page-4/Fonts/PlusJakartaSans-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'SixCaps';
+    src: url(/Page-4/Fonts/SixCaps-Regular.ttf);
+}
+
+$main-color: #f0c633;
+$font-BebasNeue: 'BebasNeue';
+$font-PlusJakartaSans: 'PlusJakartaSans';
+$font-SixCaps: 'SixCaps';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 100%;
+    display: flex;
+    -webkit-user-select: none; 
+    -ms-user-select: none;   
+    user-select: none;
+
+    .left{
+        width: 50%;
+        height: 100vh;
+        background-image: url(Images/5.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: inset 100px 100px 80px rgba(0, 0, 0, 0.8);
+        position: sticky;
+        top: 0;
+
+        .left-text{
+            margin: 60px;
+
+            h1{
+                margin-bottom: 25px;
+
+                a{
+                    color: #f8f2e8;
+                    font-size: 3.5rem;
+                    text-decoration: none;
+                    font-family: $font-BebasNeue;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+
+            ul {
+
+                li {
+                    position: relative;
+                    margin-bottom: 20px;
+                    padding-left: 30px;
+                    display: flex;
+                    align-items: center;
+
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        width: 10px;
+                        height: 10px;
+                        background-color: $main-color;
+                        border-radius: 50%;
+                        transition: transform 0.5s ease;
+                        transform: scale(1);
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: #f8f2e8;
+                        font-size: 1.1rem;
+                        font-family: $font-PlusJakartaSans;
+                        font-weight: bold;
+                        transition: color 0.5s;
+                        transition: color 0.4s ease, margin-left 0.4s ease;
+                    }
+
+                    &:hover {
+                        &::before {
+                            transform: scale(1.5);
+                        }
+                        
+                        a {
+                            color: $main-color;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .right{
+        background-color: #102326;
+        width: 50%;
+        height: 91.2vh;
+        padding: 40px;
+
+        header{
+            display: flex;
+            padding-bottom: 10px;
+            border-bottom: #364647 solid 1px;
+
+            .h-left{
+                margin-right: 150px;
+
+                p{
+                    font-family: $font-SixCaps;
+                    color: $main-color;
+                    font-size: 12rem;
+                    text-transform: uppercase;
+                    letter-spacing: 5px;
+                    margin-top: -45px;
+                }
+            }
+
+            .h-center{
+                background-color: #364647;
+                height: 180px;
+                width: 1px;
+            }
+
+            .h-right{
+                color: white;
+                margin-left: 50px;
+                font-size: 1.2rem;
+                line-height: 30px;
+
+                span{
+                    color: gray;
+                }
+            }
+        }
+
+        section{
+            padding-top: 50px;
+            border-top: #364647 solid 1px;
+            margin-top: 3px;
+            
+            .sec-1{
+                display: flex;
+                align-items: center;
+
+                .sec1-left{
+                    margin-right: 350px;
+
+                    h4{
+                        color: $main-color;
+                        font-family: $font-BebasNeue;
+                    }
+
+                    h2{
+                        color: white;
+                    }
+                }
+
+                .sec1-center{
+                    background-color: #364647;
+                    height: 60px;
+                    width: 1px;
+                    margin-right: 50px;
+                }
+
+                .sec1-right{
+
+                    h4{
+                        color: $main-color;
+                        font-family: $font-BebasNeue;
+                    }
+
+                    h2{
+                        a{
+                            color: white;
+                            text-decoration: none;
+
+                            &:hover{
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .sec-2{
+                margin-top: 50px;
+
+                iframe{
+                    width: 100%;
+                    border-radius: 2rem;
+                }
+            }
+        }
+    }
+}
